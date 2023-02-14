@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Täringuvise</title>
+    <style>
+        body {
+            background-color: rgb(101, 129, 108);
+        }
+
+        div {
+            float: left;
+            flex-wrap: wrap;
+            width: 10%;
+            height: 10%;
+            margin-top: 5em;
+            margin-left: 8%;
+        }
+
+        img {
+            margin-left: 2%;
+            max-width: 100%;
+        }
+
+        button {
+            font-size: medium;
+            color: rgb(24, 24, 24);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed;
+            bottom: 12%;
+            width: 4em;
+            height: 4em;
+            border-radius: 18%;
+            box-shadow: 0 0 1em 0.1em rgba(39, 39, 39, 0.212);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 0 0 1em 0.1em rgba(0, 0, 0, 0.3);
+        }
+
+        button#a {
+            left: 30%;
+        }
+
+        button#b {
+            right: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"><img src="pildid/0.png"></div>
+    <buttons>
+        <button id="a" onclick="addDice()">Lisa täring</button>
+        <button id="b" onclick="roll()">Veereta</button>
+    </buttons>
+    <script src="dice.js"></script>
+</body>
+
+</html>
